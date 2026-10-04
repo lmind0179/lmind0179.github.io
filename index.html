@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lmind - Native Utilities for Apple Platforms</title>
+  <meta name="description" content="Focused, lightweight native applications designed for Apple platforms with complete on-device privacy.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/lang.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-container header-inner">
+      <a href="index.html" class="brand-title">lmind</a>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link active">
+          <span data-lang="en">Apps</span>
+          <span data-lang="ko">앱 목록</span>
+        </a>
+        <a href="support.html" class="nav-link">
+          <span data-lang="en">Support</span>
+          <span data-lang="ko">고객 지원</span>
+        </a>
+        <div class="lang-switch">
+          <button type="button" class="lang-btn active" data-lang-target="en" aria-label="Switch to English">EN</button>
+          <span class="lang-divider">/</span>
+          <button type="button" class="lang-btn" data-lang-target="ko" aria-label="한국어로 변경">KO</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="site-container">
+      <section class="intro-section">
+        <h1 class="intro-heading" data-lang="en">Focused native utilities.</h1>
+        <h1 class="intro-heading" data-lang="ko">본질에 집중한 네이티브 유틸리티.</h1>
+        
+        <p class="intro-desc" data-lang="en">Simple, reliable applications built for macOS and iOS. All processing runs entirely on your device with zero tracking and zero telemetry.</p>
+        <p class="intro-desc" data-lang="ko">macOS와 iOS 환경을 위해 가볍고 안정적으로 설계된 유틸리티입니다. 모든 처리는 외부 서버 전송 없이 기기 내부에서만 독립적으로 동작합니다.</p>
+      </section>
+
+      <section class="app-list">
+        <!-- 1. Bible Paste -->
+        <article class="app-card">
+          <img src="assets/icons/biblepaste.png" alt="Bible Paste icon" class="app-icon">
+          <div class="app-body">
+            <div class="app-header">
+              <h2 class="app-title">Bible Paste</h2>
+              <span class="platform-badge">iOS &middot; macOS</span>
+            </div>
+            <p class="app-description" data-lang="en">Automatically detects scripture references in copied text and formats full passages using offline translation databases.</p>
+            <p class="app-description" data-lang="ko">복사한 텍스트에서 성경 구절을 자동 감지하여 오프라인 데이터베이스를 통해 원하는 역본의 본문으로 즉시 변환합니다.</p>
+            <div class="app-links">
+              <a href="privacy/biblepaste.html" class="app-link">
+                <span data-lang="en">Privacy Policy</span>
+                <span data-lang="ko">개인정보 처리방침</span>
+              </a>
+              <span class="app-link muted">App Store</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. LSleep -->
+        <article class="app-card">
+          <img src="assets/icons/lsleep.png" alt="LSleep icon" class="app-icon">
+          <div class="app-body">
+            <div class="app-header">
+              <h2 class="app-title">LSleep</h2>
+              <span class="platform-badge">iOS</span>
+            </div>
+            <p class="app-description" data-lang="en">Seven carefully engineered sleep soundscapes with an automatic low-frequency fade-out timer that turns off audio after you sleep.</p>
+            <p class="app-description" data-lang="ko">정밀 설계된 7가지 수면 사운드와 잠든 후 청각을 보호하며 재생을 종료해 주는 자동 페이드아웃 타이머를 제공합니다.</p>
+            <div class="app-links">
+              <a href="privacy/lsleep.html" class="app-link">
+                <span data-lang="en">Privacy Policy</span>
+                <span data-lang="ko">개인정보 처리방침</span>
+              </a>
+              <span class="app-link muted">App Store</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. LClock -->
+        <article class="app-card">
+          <img src="assets/icons/lclock.png" alt="LClock icon" class="app-icon">
+          <div class="app-body">
+            <div class="app-header">
+              <h2 class="app-title">LClock</h2>
+              <span class="platform-badge">iOS &middot; macOS</span>
+            </div>
+            <p class="app-description" data-lang="en">A clean, distraction-free clock and menubar utility designed for glanceable desk display and focused work environments.</p>
+            <p class="app-description" data-lang="ko">군더더기 없이 시간 본연에 집중한 미니멀 탁상 시계이자 메뉴바 디스플레이 유틸리티입니다.</p>
+            <div class="app-links">
+              <a href="privacy/lclock.html" class="app-link">
+                <span data-lang="en">Privacy Policy</span>
+                <span data-lang="ko">개인정보 처리방침</span>
+              </a>
+              <span class="app-link muted">App Store</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. LMind -->
+        <article class="app-card">
+          <img src="assets/icons/lmind.png" alt="LMind icon" class="app-icon">
+          <div class="app-body">
+            <div class="app-header">
+              <h2 class="app-title">LMind</h2>
+              <span class="platform-badge">iOS &middot; iPadOS &middot; macOS</span>
+            </div>
+            <p class="app-description" data-lang="en">Fast visual mind mapping and knowledge organizing tool. Stored locally or synced securely through your personal iCloud account.</p>
+            <p class="app-description" data-lang="ko">생각과 아이디어를 노드로 구조화하는 마인드맵 도구입니다. 기기 로컬 및 개인 iCloud에만 안전하게 보관됩니다.</p>
+            <div class="app-links">
+              <a href="privacy/lmind.html" class="app-link">
+                <span data-lang="en">Privacy Policy</span>
+                <span data-lang="ko">개인정보 처리방침</span>
+              </a>
+              <span class="app-link muted">App Store</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. LCopy -->
+        <article class="app-card">
+          <img src="assets/icons/lcopy.png" alt="LCopy icon" class="app-icon">
+          <div class="app-body">
+            <div class="app-header">
+              <h2 class="app-title">LCopy</h2>
+              <span class="platform-badge">iOS</span>
+            </div>
+            <p class="app-description" data-lang="en">Identifies account numbers, dates, and links in copied text to open direct bank transfers or create calendar events in one tap.</p>
+            <p class="app-description" data-lang="ko">복사한 텍스트에서 계좌번호, 날짜, 링크 등을 감지해 은행 앱 송금이나 캘린더 일정 등록으로 바로 연결합니다.</p>
+            <div class="app-links">
+              <a href="privacy/lcopy.html" class="app-link">
+                <span data-lang="en">Privacy Policy</span>
+                <span data-lang="ko">개인정보 처리방침</span>
+              </a>
+              <span class="app-link muted">App Store</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. LMoaKey -->
+        <article class="app-card">
+          <img src="assets/icons/lmoakey.png" alt="LMoaKey icon" class="app-icon">
+          <div class="app-body">
+            <div class="app-header">
+              <h2 class="app-title">LMoaKey</h2>
+              <span class="platform-badge">iOS</span>
+            </div>
+            <p class="app-description" data-lang="en">Fast Korean text input using swipe gesture vowel combinations. Operates entirely offline without requiring full network access.</p>
+            <p class="app-description" data-lang="ko">모음 키 스와이프 제스처로 빠른 한글 입력을 지원하며, 네트워크 권한 없이 기기 내에서만 안전하게 동작합니다.</p>
+            <div class="app-links">
+              <a href="privacy/lmoakey.html" class="app-link">
+                <span data-lang="en">Privacy Policy</span>
+                <span data-lang="ko">개인정보 처리방침</span>
+              </a>
+              <span class="app-link muted">App Store</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. LNewFile -->
+        <article class="app-card">
+          <img src="assets/icons/lnewfile.png" alt="LNewFile icon" class="app-icon">
+          <div class="app-body">
+            <div class="app-header">
+              <h2 class="app-title">LNewFile</h2>
+              <span class="platform-badge">macOS</span>
+            </div>
+            <p class="app-description" data-lang="en">Finder context menu and toolbar extension that lets you create blank text, markdown, or template files in the current folder.</p>
+            <p class="app-description" data-lang="ko">Finder 우클릭 메뉴와 툴바에서 텍스트, 마크다운 등 원하는 서식의 새 파일을 현재 폴더에 즉시 생성합니다.</p>
+            <div class="app-links">
+              <a href="privacy/lnewfile.html" class="app-link">
+                <span data-lang="en">Privacy Policy</span>
+                <span data-lang="ko">개인정보 처리방침</span>
+              </a>
+              <span class="app-link muted">Mac App Store</span>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-container footer-inner">
+      <p class="footer-copy">&copy; 2026 lmind. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html" class="footer-link">
+          <span data-lang="en">Apps</span>
+          <span data-lang="ko">앱 목록</span>
+        </a>
+        <a href="support.html" class="footer-link">
+          <span data-lang="en">Support</span>
+          <span data-lang="ko">고객 지원</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
