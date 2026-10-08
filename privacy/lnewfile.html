@@ -36,35 +36,42 @@
         <div data-lang="en">
           <header class="doc-header">
             <h1 class="doc-title">Privacy Policy for LNewFile</h1>
-            <p class="doc-meta">Effective Date: October 5, 2026</p>
+            <p class="doc-meta">Effective Date: October 9, 2026</p>
           </header>
 
           <div class="doc-content">
-            <p>This Privacy Policy outlines how <strong>LNewFile</strong> ("we", "our", or "the App") respects your file system privacy. LNewFile is a native macOS Finder extension utility designed to create new template files seamlessly.</p>
+            <h2>1. Operator and scope</h2>
+            <p>LNewFile is a macOS Finder extension and popup file creation utility provided by lmind. This Privacy Policy outlines file creation, Finder automation, popup positioning event detection, template storage, and support inquiries. Developer contact: <a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>.</p>
 
-            <h2>1. No Personal Data or File Tracking</h2>
-            <p>LNewFile does <strong>not</strong> collect, scan, upload, or transmit personal data or file contents. We do not maintain any external servers, accounts, or telemetry services.</p>
+            <h2>2. Developer collection and tracking</h2>
+            <p>LNewFile does <strong>not</strong> collect, scan, transmit, or monetize your file contents, file names, folder paths, keystrokes, or diagnostic usage data to developer servers. The App operates without user accounts, advertising SDKs, tracking pixels, or third-party telemetry frameworks. If you contact support by email, we receive your email address and message solely to respond to your technical question.</p>
 
-            <h2>2. FinderSync Extension & Sandboxed File Access</h2>
-            <p>LNewFile operates strictly within the official Apple macOS App Sandbox and FinderSync architecture:</p>
+            <h2>3. Popup placement and mouse event monitoring</h2>
+            <p>To provide instant popup menus directly next to your mouse cursor:</p>
             <ul>
-              <li>The App interacts with Finder only to display the context menu item and create the file requested by you at the specified target folder.</li>
-              <li>Folder access is restricted strictly to directories you actively browse or authorize using Apple's standard Security-Scoped Bookmarks.</li>
-              <li>LNewFile creates empty or template-based files locally on your Mac's storage drive. No file paths, directory hierarchies, or file names are ever transmitted outside your Mac.</li>
+              <li><strong>Cursor & Window Placement:</strong> When triggered, the App detects global mouse click coordinates and active screen window boundaries solely to determine the exact screen position where the file creation popup should appear.</li>
+              <li><strong>Zero Keystroke / Text Monitoring:</strong> This detection is strictly limited to pointer click events and window frame coordinates. The App does <strong>not</strong> monitor, record, or inspect keyboard typing, passwords, or text input.</li>
+              <li><strong>System Permissions:</strong> Popup triggering utilizes standard macOS Accessibility or Input Monitoring permissions. You can grant or revoke these permissions at any time in macOS System Settings &gt; Privacy &amp; Security.</li>
             </ul>
 
-            <h2>3. Template Management & Local Storage</h2>
-            <p>Custom template files and menu ordering configurations are stored entirely inside your Mac user library container (<code>~/Library/Group Containers/</code>). These preferences remain local to your computer.</p>
+            <h2>4. Finder integration and Apple Events automation</h2>
+            <p>To identify the current target directory where you intend to create a new file, LNewFile communicates with the active Finder window via Apple Events (<code>com.apple.finder</code>). This interaction is used strictly to retrieve the current insertion folder path; it does not read, index, or inspect the contents of existing files.</p>
 
-            <h2>4. Third-Party Analytics & Network Connections</h2>
-            <p>LNewFile contains zero third-party advertising SDKs, tracking pixels, or diagnostic telemetry frameworks. The extension and main application function completely offline without outgoing network connections.</p>
+            <h2>5. Sandboxed file creation and target storage</h2>
+            <p>LNewFile creates empty or template-based files strictly within folder paths authorized by you using Apple's standard Security-Scoped Bookmarks:</p>
+            <ul>
+              <li>Files are written directly to your local file system drive. No folder structures or file paths are ever uploaded to developer servers.</li>
+              <li>If you choose a target folder located on Apple iCloud Drive, an external drive, or a third-party synchronization directory (such as Dropbox or Google Drive), file persistence and network synchronization are governed by that storage provider's service policies.</li>
+            </ul>
 
-            <h2>5. Contact Us</h2>
-            <div class="contact-card">
-              <h3>Questions or Inquiries</h3>
-              <p>If you have any questions or feedback regarding this Privacy Policy, please contact:</p>
-              <p>Email: <a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a></p>
-            </div>
+            <h2>6. Template management and local storage</h2>
+            <p>Custom file templates, menu ordering, and folder authorization bookmarks (<code>bookmarks.plist</code>) are stored locally in your Mac user library container (<code>~/Library/Group Containers/PB7DV32DL6.group.LMind.LNewFile</code>). Adding a custom template simply copies the template file into your local container without analyzing its contents. Deleting the application removes its container settings; however, files previously created in your Finder folders remain intact and must be managed or deleted directly by you in Finder.</p>
+
+            <h2>7. User controls and support retention</h2>
+            <p>You can remove custom templates, revoke folder access permissions, and revoke macOS Accessibility or Input Monitoring permissions in System Settings at any time. Support emails sent to lmind0179@gmail.com are retained only during the resolution of your inquiry and can be deleted upon request.</p>
+
+            <h2>8. Changes to this policy</h2>
+            <p>Any updates to this policy will be posted on this public page along with an updated effective date.</p>
           </div>
         </div>
 
@@ -72,35 +79,42 @@
         <div data-lang="ko">
           <header class="doc-header">
             <h1 class="doc-title">LNewFile 개인정보 처리방침</h1>
-            <p class="doc-meta">시행일: 2026년 10월 5일</p>
+            <p class="doc-meta">시행일: 2026년 10월 9일</p>
           </header>
 
           <div class="doc-content">
-            <p>본 개인정보 처리방침은 <strong>LNewFile</strong>(이하 "앱")이 파일 시스템 프라이버시를 어떻게 보호하는지 설명합니다. LNewFile은 Mac Finder에서 새 서식 파일을 손쉽게 생성할 수 있도록 돕는 macOS 네이티브 확장 유틸리티입니다.</p>
+            <h2>1. 운영자 및 적용 범위</h2>
+            <p>LNewFile은 lmind가 개발·제공하는 macOS Finder 확장 및 마우스 팝업 새 파일 생성 유틸리티입니다. 본 개인정보 처리방침은 파일 생성, Finder 자동화, 팝업 창 배치를 위한 이벤트 감지, 서식 템플릿 보관, 그리고 고객 지원에 관한 사항을 설명합니다. 개발자 문의: <a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>.</p>
 
-            <h2>1. 파일 내용 및 개인정보 미수집 원칙</h2>
-            <p>LNewFile은 사용자의 개인정보나 파일 내용, 파일 목록을 <strong>수집, 분석, 전송하지 않습니다</strong>. 외부 서버나 계정 시스템을 일체 운영하지 않습니다.</p>
+            <h2>2. 개발자의 수집 및 추적 미수행</h2>
+            <p>LNewFile은 생성된 파일의 내용, 파일명, 폴더 경로, 키보드 입력 내용, 사용자 이용 통계를 <strong>개발자 서버로 전송하거나 수집하지 않습니다</strong>. 회원가입이나 계정 시스템을 운영하지 않으며, 광고 모듈이나 제3자 분석 SDK를 일체 포함하지 않습니다. 이메일 문의 시 제공해주신 이메일 주소와 문의 내용은 고객 응대 목적으로만 한정하여 처리됩니다.</p>
 
-            <h2>2. FinderSync 확장 및 샌드박스 보안 규격 준수</h2>
-            <p>LNewFile은 Apple 공식 App Sandbox 및 FinderSync 아키텍처를 엄격히 준수합니다:</p>
+            <h2>3. 팝업 배치 및 마우스 이벤트 감지</h2>
+            <p>사용자의 마우스 커서 위치에 새 파일 메뉴 팝업을 즉시 띄우기 위해 다음과 같이 동작합니다:</p>
             <ul>
-              <li>앱은 사용자가 지정한 위치에 요청한 서식 파일을 생성하고 Finder 우클릭 메뉴를 띄우는 용도로만 동작합니다.</li>
-              <li>폴더 접근은 사용자가 직접 조작 중인 폴더나 Security-Scoped Bookmarks를 통해 허용한 경로로만 엄격히 제한됩니다.</li>
-              <li>파일 생성은 사용자의 Mac 로컬 디스크 안에서만 발생하며, 어떠한 파일 경로나 디렉토리 구조도 Mac 외부로 전송되지 않습니다.</li>
+              <li><strong>커서 위치 및 창 정보 감지:</strong> 사용자가 트리거 조작을 수행했을 때, 팝업 메뉴가 나타날 정확한 화면 좌표를 계산하기 위해 전역 마우스 클릭 위치 및 활성 창 경계 정보를 감지합니다.</li>
+              <li><strong>키보드 입력 및 텍스트 미감시:</strong> 본 감지 동작은 마우스 좌표와 창 위치 계산에 엄격히 한정됩니다. 키보드 타이핑 내용, 비밀번호, 텍스트 입력을 감시하거나 기록하지 않습니다.</li>
+              <li><strong>시스템 권한:</strong> 팝업 감지 기능은 macOS의 '손쉬운 사용(Accessibility)' 또는 '입력 모니터링(Input Monitoring)' 권한을 통해 동작하며, 사용자는 Mac 시스템 설정 &gt; 개인정보 보호 및 보안에서 언제든 권한을 허용하거나 철회할 수 있습니다.</li>
             </ul>
 
-            <h2>3. 서식 파일의 로컬 보관</h2>
-            <p>사용자 정의 서식 템플릿과 메뉴 구성 정보는 사용자 Mac 라이브러리 컨테이너(~/Library/Group Containers/) 내에만 안전하게 보관됩니다.</p>
+            <h2>4. Finder 연동 및 Apple Events 자동화</h2>
+            <p>새 파일을 만들 대상 폴더(현재 사용자가 탐색 중인 Finder 위치)를 확인하기 위해 Finder와 Apple Events(<code>com.apple.finder</code>)로 통신합니다. 이 통신은 오직 현재 열려 있는 폴더 경로를 식별하기 위한 용도로만 쓰이며, 기존 파일의 내용을 읽거나 분석하지 않습니다.</p>
 
-            <h2>4. 제3자 분석 도구 미포함</h2>
-            <p>LNewFile은 일체의 광고 SDK나 사용자 행동 분석 도구를 포함하지 않으며, 네트워크 연결 없이 오프라인으로만 구동됩니다.</p>
+            <h2>5. 샌드박스 파일 생성 및 대상 저장소</h2>
+            <p>LNewFile은 Apple 공식 App Sandbox 및 Security-Scoped Bookmarks 규격에 따라 사용자가 승인한 폴더 내에만 새 서식 파일을 생성합니다:</p>
+            <ul>
+              <li>파일 생성은 사용자의 Mac 로컬 저장 공간에서 직접 수행되며, 파일 경로가 개발자 서버로 전송되지 않습니다.</li>
+              <li>대상 폴더가 Apple iCloud Drive, 외장 드라이브, 또는 클라우드 동기화 폴더(Dropbox, Google Drive 등)인 경우, 파일 보관 및 네트워크 동기화는 해당 저장소 서비스의 정책에 따릅니다.</li>
+            </ul>
 
-            <h2>5. 문의처</h2>
-            <div class="contact-card">
-              <h3>문의 및 피드백</h3>
-              <p>본 개인정보 처리방침에 관해 궁금한 점이 있으시면 언제든지 문의해 주시기 바랍니다:</p>
-              <p>이메일: <a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a></p>
-            </div>
+            <h2>6. 서식 템플릿 관리 및 로컬 저장소</h2>
+            <p>사용자 커스텀 서식 템플릿, 메뉴 구성 순서, 폴더 접근 승인 북마크(<code>bookmarks.plist</code>)는 사용자의 Mac 라이브러리 컨테이너(<code>~/Library/Group Containers/PB7DV32DL6.group.LMind.LNewFile</code>) 내에 로컬로 보관됩니다. 커스텀 템플릿 추가는 템플릿 폴더로 원본 파일을 복사하는 동작이며 파일 내용을 분석하지 않습니다. 앱을 삭제하면 컨테이너 설정은 제거되지만, 이미 Finder 폴더에 생성된 파일은 그대로 유지되므로 사용자가 Finder에서 직접 관리하셔야 합니다.</p>
+
+            <h2>7. 사용자 권한 통제 및 문의 처리</h2>
+            <p>사용자는 커스텀 서식 삭제, 폴더 접근 권한 해제, 시스템 손쉬운 사용 및 입력 모니터링 권한 철회를 언제든지 직접 제어할 수 있습니다. 문의 이메일(<a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>)로 접수된 서신은 고객 지원 목적으로만 보관되며 언제든지 삭제를 요청하실 수 있습니다.</p>
+
+            <h2>8. 처리방침 변경 안내</h2>
+            <p>기능 추가나 시스템 변경이 있을 경우, 본 공개 페이지를 통해 개정 사항과 시행일을 안내합니다.</p>
           </div>
         </div>
       </article>
