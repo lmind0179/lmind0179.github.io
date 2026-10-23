@@ -222,6 +222,17 @@ main.site-content {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
+.app-icon-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #304f82, #202b4f);
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
 .app-body {
   flex: 1;
   min-width: 0;
@@ -277,6 +288,17 @@ main.site-content {
 
 .app-link:hover {
   border-color: var(--text-primary);
+}
+
+.license-text {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: 0.8125rem/1.55 ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 12px;
+  padding: 16px;
 }
 
 .app-link.muted {
