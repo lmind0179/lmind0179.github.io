@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LNote Privacy Policy</title>
+<meta name="description" content="How LNote handles documents, external AI, local storage and optional connections.">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script src="../assets/js/lang.js">
+</script>
+<style>.doc-content{overflow-wrap:anywhere}@media(max-width:600px){.header-inner{flex-wrap:wrap;gap:12px}.site-nav{flex-wrap:wrap;gap:12px}}</style>
+</head>
+<body>
+<header class="site-header">
+<div class="site-container header-inner">
+<a href="../index.html" class="brand-title">lmind</a>
+<nav class="site-nav">
+<a href="index.html" class="nav-link">LNote</a>
+<a href="support.html" class="nav-link">
+<span data-lang="en">Support</span>
+<span data-lang="ko">고객 지원</span>
+</a>
+<a href="privacy.html" class="nav-link">
+<span data-lang="en">Privacy</span>
+<span data-lang="ko">개인정보</span>
+</a>
+<div class="lang-switch">
+<button type="button" class="lang-btn active" data-lang-target="en" aria-label="Switch to English">EN</button>
+<span class="lang-divider">/</span>
+<button type="button" class="lang-btn" data-lang-target="ko" aria-label="한국어로 변경">KO</button>
+</div>
+</nav>
+</div>
+</header>
+<main class="site-content">
+<div class="site-container">
+<article class="doc-article">
+<div data-lang="en">
+<header class="doc-header">
+<h1 class="doc-title">LNote Privacy Policy</h1>
+<p class="doc-meta">Effective date: October 27, 2026</p>
+</header>
+<div class="doc-content">
+<h2>1. Operator and scope</h2>
+<p>LNote is provided by lmind. This policy explains how documents, notes, conversations, credentials and optional external connections are handled. It covers LNote for macOS, Windows, iOS and iPadOS where a feature is available. Features vary by platform and version. Contact: <a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>.</p>
+<h2>2. Local documents and storage</h2>
+<p>LNote reads documents and folders you select to display, search and organize their contents. Depending on the feature, it stores extracted text, search indexes, document references, notes, conversations, drafts and settings on your device or in a storage location you choose. Indexes and backups may contain personal or confidential document content.</p>
+<p>The developer does not receive these files through a developer-operated document storage or AI proxy service. Local storage does not mean all app features are offline: external AI, remote access, downloads and external resources can involve network requests.</p>
+<h2>3. External AI services</h2>
+<p>When you choose an external AI service and use a feature that calls it, LNote sends the inputs needed for that request directly to the selected provider, such as OpenAI, Google Gemini or Anthropic. Inputs can include your question, relevant document excerpts, source labels or file names, system instructions and conversation context. Your API key authenticates the request. The provider also receives connection information such as your IP address and request metadata.</p>
+<p>The provider may retain inputs, outputs and metadata for security, service delivery or other purposes under its terms and your account settings. Google’s unpaid Gemini services may use submitted content and responses to improve products and may involve human review. Paid services and eligible retention controls have different terms. LNote does not promise zero retention or that all external services exclude training. Do not submit confidential or sensitive material unless the selected service and account settings are suitable.</p>
+<p>
+<a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI API data controls</a> · <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a> · <a href="https://privacy.anthropic.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">Anthropic API retention</a> · <a href="https://telegram.org/privacy">Telegram privacy policy</a>
+</p>
+<p>To avoid sending document content to an external AI provider, use an on-device model or a local server you control. A custom or remote Ollama endpoint receives the prompts and document context sent to it; its operator and network settings determine how that data is handled.</p>
+<h2>4. Credentials and optional connections</h2>
+<p>API keys and remote-access credentials are stored using the security facilities supported by your platform, such as macOS/iOS Keychain or Windows credential protection. They are sent to the corresponding service for authentication. Treat exported files and backups as private; they can contain document data even when API keys are excluded.</p>
+<p>If you configure Telegram remote access on a supported desktop version, the Telegram Bot API handles your bot connection, user/chat identifiers, commands, questions, replies and status messages. Replies may contain document excerpts or source information. Telegram and any AI provider selected for a remote question handle this data under their own policies. Disable the connection and remove its credentials to stop future access; this does not erase messages already stored by Telegram.</p>
+<h2>5. Other network requests</h2>
+<p>If enabled, Gemini model discovery requests the available model list using your API key; this request does not include your documents. Model downloads and connections to services you configure expose ordinary connection metadata to the destination. Some desktop versions load icon styles or fonts from cdnjs/Cloudflare. That provider receives a network request and connection metadata, although documents are not included in the resource request.</p>
+<p>Files stored in iCloud Drive, a synchronized folder or another file provider may be uploaded and synchronized by that provider. Device backups and external storage are governed by the provider and your settings.</p>
+<h2>6. Advertising, tracking and support</h2>
+<p>LNote does not run ads or use a developer-operated behavioral analytics service. The developer does not use your documents for advertising or sell them. This does not override the data practices of external services you select.</p>
+<p>If you contact support by email, the developer receives your email address and anything you choose to send, to answer and follow up on the request. Please remove API keys, passwords and confidential document content before sending screenshots or error details.</p>
+<h2>7. Retention, deletion and choices</h2>
+<p>Local data remains until you delete it or remove the relevant app data. Deleting an index does not necessarily delete the original document, saved notes, drafts, backups or synchronized copies. Removing the app may leave exported or desktop data folders behind. Manage those copies at their storage locations.</p>
+<p>The developer cannot retrieve or remotely delete data stored only on your device or in your external accounts. To stop future external processing, stop using the service, disable the related connection and remove its credentials. For access or deletion requests concerning a provider’s records, contact that provider. Support correspondence is kept while needed to respond and follow up, then deleted when no longer needed. Email <a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a> to request access, correction or deletion of support correspondence.</p>
+<h2>8. This website</h2>
+<p>This website stores your EN/KO language preference in browser local storage and does not use third-party web analytics or advertising cookies. GitHub Pages hosts the site and may process connection logs, including IP addresses, under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>. Website visits are separate from document processing in the app.</p>
+<h2>9. Changes</h2>
+<p>If data practices change, this policy will be updated with a new effective date. Material changes will be explained on this page or in the app.</p>
+</div>
+</div>
+<div data-lang="ko">
+<header class="doc-header">
+<h1 class="doc-title">LNote 개인정보 처리방침</h1>
+<p class="doc-meta">시행일: 2026년 10월 27일</p>
+</header>
+<div class="doc-content">
+<h2>1. 운영자 및 적용 범위</h2>
+<p>LNote는 lmind가 제공합니다. 이 방침은 문서, 노트, 대화, 인증 정보 및 선택적 외부 연결의 처리 방식을 설명합니다. 해당 기능을 제공하는 macOS, Windows, iOS 및 iPadOS 버전에 적용하며, 기능은 플랫폼과 버전에 따라 다릅니다. 문의: <a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>.</p>
+<h2>2. 문서 접근 및 로컬 저장</h2>
+<p>LNote는 사용자가 선택한 문서와 폴더를 읽어 내용을 표시·검색·정리합니다. 사용하는 기능에 따라 추출한 텍스트, 검색 색인, 문서 참조, 노트, 대화, 초안과 설정을 기기 또는 사용자가 선택한 위치에 저장합니다. 색인과 백업에도 개인정보나 기밀 문서 내용이 포함될 수 있습니다.</p>
+<p>개발자는 문서 저장용 자체 서버나 AI 중계 서버를 통해 이 파일들을 수신하지 않습니다. 로컬 저장이 모든 기능의 오프라인 동작을 뜻하지는 않습니다. 외부 AI, 원격 접속, 다운로드 및 외부 화면 리소스는 네트워크 요청을 수반할 수 있습니다.</p>
+<h2>3. 외부 AI 서비스</h2>
+<p>외부 AI 서비스를 선택하고 해당 서비스를 호출하는 기능을 사용하면, LNote는 요청에 필요한 입력을 OpenAI, Google Gemini, Anthropic 등 선택한 제공자에게 직접 전송합니다. 질문, 관련 문서 발췌, 출처 표시나 파일 이름, 시스템 지시문 및 대화 맥락이 포함될 수 있습니다. API 키는 요청 인증에 사용하며, 제공자는 IP 주소와 요청 메타데이터 같은 접속 정보도 받습니다.</p>
+<p>제공자는 자체 약관과 사용자 계정 설정에 따라 입력·출력·메타데이터를 보안, 서비스 제공 등의 목적으로 보관할 수 있습니다. Google의 무료 Gemini 서비스는 입력과 답변을 제품 개선에 사용하거나 사람이 검토할 수 있습니다. 유료 서비스나 별도 보관 제한이 적용되는 계정은 조건이 다릅니다. LNote는 모든 외부 서비스의 무보관 또는 학습 제외를 보장하지 않습니다. 기밀·민감 자료는 선택한 서비스와 계정 조건을 확인한 뒤 사용하세요.</p>
+<p>
+<a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI API data controls</a> · <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a> · <a href="https://privacy.anthropic.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">Anthropic API retention</a> · <a href="https://telegram.org/privacy">Telegram privacy policy</a>
+</p>
+<p>문서 내용을 외부 AI 제공자에게 보내지 않으려면 기기 내 모델이나 직접 관리하는 로컬 서버를 사용하세요. 별도로 지정한 원격 Ollama 주소에는 질문과 문서 맥락이 전송되며, 데이터 처리는 그 서버 운영자와 네트워크 설정에 따라 달라집니다.</p>
+<h2>4. 인증 정보 및 선택적 연동</h2>
+<p>API 키와 원격 접속 인증 정보는 macOS/iOS Keychain, Windows 자격 증명 보호 등 플랫폼에서 지원하는 보안 기능으로 보관하며, 해당 서비스 인증 시 전송합니다. API 키가 제외되는 백업이라도 문서 내용은 포함될 수 있으므로 내보낸 파일과 백업도 주의하여 관리하세요.</p>
+<p>지원되는 데스크톱 버전에서 텔레그램 원격 기능을 설정하면 Telegram Bot API를 통해 봇 연결, 사용자·대화방 식별자, 명령, 질문, 답변 및 상태 메시지가 처리됩니다. 답변에는 문서 발췌나 출처 정보가 포함될 수 있습니다. 텔레그램 및 원격 질문에 사용한 AI 제공자는 자체 방침에 따라 데이터를 처리합니다. 연결을 끄고 인증 정보를 지우면 이후 접근을 중단할 수 있지만, 이미 텔레그램에 저장된 메시지까지 삭제되지는 않습니다.</p>
+<h2>5. 그 밖의 네트워크 요청</h2>
+<p>Gemini 모델 목록 확인을 켜면 API 키로 사용 가능한 모델 목록을 요청합니다. 이 요청에는 문서가 포함되지 않습니다. 모델 다운로드와 사용자가 설정한 서비스 접속 시에는 상대 서버에 일반적인 접속 정보가 전달됩니다. 일부 데스크톱 버전은 cdnjs/Cloudflare에서 아이콘 스타일이나 글꼴을 불러옵니다. 이때 해당 제공자는 접속 요청과 메타데이터를 받지만, 리소스 요청에 문서 내용을 포함하지는 않습니다.</p>
+<p>iCloud Drive, 동기화 폴더 또는 다른 파일 제공자에 저장한 파일은 해당 제공자가 업로드·동기화할 수 있습니다. 기기 백업과 외부 저장소의 처리는 제공자의 방침 및 사용자 설정에 따릅니다.</p>
+<h2>6. 광고, 추적 및 고객 문의</h2>
+<p>LNote는 광고를 표시하거나 개발자가 운영하는 행동 분석 서비스를 사용하지 않습니다. 개발자는 문서를 광고에 사용하거나 판매하지 않습니다. 이 설명이 사용자가 선택한 외부 서비스의 처리 방식을 대신하지는 않습니다.</p>
+<p>이메일로 문의하면 개발자는 답변과 후속 처리를 위해 이메일 주소와 사용자가 보낸 내용을 받습니다. 화면이나 오류 내용을 보낼 때는 API 키, 비밀번호 및 기밀 문서 내용을 먼저 지워 주세요.</p>
+<h2>7. 보관, 삭제 및 사용자 선택</h2>
+<p>로컬 데이터는 사용자가 관련 데이터를 삭제할 때까지 남을 수 있습니다. 색인을 지워도 원본 문서, 저장한 노트, 초안, 백업 또는 동기화 사본이 함께 삭제되는 것은 아닙니다. 앱을 삭제해도 내보낸 파일이나 데스크톱 데이터 폴더는 남을 수 있으므로 해당 저장 위치에서 별도로 관리하세요.</p>
+<p>개발자는 기기나 외부 계정에만 저장된 자료를 가져오거나 원격으로 삭제할 수 없습니다. 이후 외부 처리를 중단하려면 해당 서비스 사용을 멈추고 관련 연결을 끈 뒤 인증 정보를 제거하세요. 외부 제공자 보관 자료의 열람·삭제는 해당 제공자에게 요청해야 합니다. 문의 기록은 답변과 후속 처리에 필요한 동안 보관하고 더 이상 필요하지 않으면 삭제합니다. 문의 기록의 열람·정정·삭제 요청은 <a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>으로 보내주세요.</p>
+<h2>8. 안내 웹사이트</h2>
+<p>이 웹사이트는 브라우저 localStorage에 EN/KO 언어 선택을 저장하며, 제3자 웹 분석 도구나 광고 쿠키를 사용하지 않습니다. 호스팅을 제공하는 GitHub Pages는 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보 처리방침</a>에 따라 IP 주소를 포함한 접속 로그를 처리할 수 있습니다. 웹사이트 접속과 앱의 문서 처리는 별개입니다.</p>
+<h2>9. 방침 변경</h2>
+<p>처리 방식이 바뀌면 시행일을 갱신합니다. 중요한 변경은 이 페이지 또는 앱에서 안내합니다.</p>
+</div>
+</div>
+</article>
+</div>
+</main>
+<footer class="site-footer">
+<div class="site-container footer-inner">
+<p class="footer-copy">&copy; 2026 lmind. All rights reserved.</p>
+<a href="../index.html" class="footer-link">
+<span data-lang="en">All apps</span>
+<span data-lang="ko">전체 앱</span>
+</a>
+</div>
+</footer>
+</body>
+</html>
