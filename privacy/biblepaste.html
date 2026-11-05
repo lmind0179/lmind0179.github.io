@@ -36,12 +36,12 @@
         <div data-lang="en">
           <header class="doc-header">
             <h1 class="doc-title">Privacy Policy for Bible Paste</h1>
-            <p class="doc-meta">Effective Date: October 9, 2026</p>
+            <p class="doc-meta">Effective Date: November 5, 2026</p>
           </header>
 
           <div class="doc-content">
             <h2>1. Operator and scope</h2>
-            <p>Bible Paste is a scripture clipboard and reading assistant provided by lmind for iOS, iPadOS, and macOS. This Privacy Policy covers clipboard text processing, local scripture search, Apple iCloud synchronization of reading progress and settings, and support inquiries. Developer contact: <a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>.</p>
+            <p>Bible Paste is a scripture clipboard and reading assistant provided by lmind for iOS, iPadOS, macOS, and Windows. This Privacy Policy covers clipboard text processing, local scripture search, local data storage, Apple iCloud synchronization of reading progress and settings on Apple devices, and support inquiries. Developer contact: <a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>.</p>
 
             <h2>2. Developer collection and tracking</h2>
             <p>Bible Paste does <strong>not</strong> collect, upload, or transmit your clipboard text, scripture searches, reading notes, device identifiers, or usage analytics to developer servers. The App requires no user registration, no account creation, and uses no advertising networks, tracking frameworks, or third-party analytics SDKs. Scripture matching is executed offline on your device using local databases. If you contact support by email, we receive your email address and the information you provide solely to respond to your inquiry.</p>
@@ -50,27 +50,28 @@
             <p>The core feature of Bible Paste is recognizing Bible book, chapter, and verse references in text and formatting corresponding scripture passages:</p>
             <ul>
               <li><strong>macOS Background Monitoring:</strong> When the menubar app is active and clipboard monitoring is enabled, the App checks system clipboard updates (polling every 0.1s or on copy shortcuts) solely to identify scripture patterns. Detected references are formatted into complete passages and written back to your system clipboard. You can toggle clipboard monitoring off at any time in App Preferences. Global hotkey features utilize macOS Accessibility APIs strictly to detect trigger key events; you can revoke Accessibility permissions in System Settings.</li>
+              <li><strong>Windows Operation:</strong> When the system tray app is active and automatic conversion on copy is enabled, the App listens to Windows clipboard update notifications solely to identify scripture references and writes the formatted passage back to your system clipboard. Global hotkey features use standard Windows shortcut and keyboard input APIs to convert scripture references at the active cursor. You can disable automatic clipboard conversion or global hotkeys at any time in the system tray menu or App Settings.</li>
               <li><strong>iOS / iPadOS Operation:</strong> The App inspects clipboard text when you use system paste controls or bring the application to the foreground while monitoring is enabled.</li>
-              <li>Formatted results written to the system clipboard and any cross-device clipboard synchronization (Universal Clipboard) depend on your Apple device and iCloud account settings.</li>
+              <li>Formatted results written to the system clipboard and any OS-level clipboard history or cross-device clipboard synchronization (such as Apple Universal Clipboard or Windows Clipboard History) depend on your operating system and account settings.</li>
             </ul>
 
-            <h2>4. Data storage and Apple iCloud (CloudKit) sync</h2>
-            <p>Bible Paste stores and synchronizes user data strictly across Apple's native infrastructure:</p>
+            <h2>4. Data storage, backup, and Apple iCloud (CloudKit) sync</h2>
+            <p>Bible Paste stores user data locally on your device, with optional Apple iCloud synchronization on Apple platforms:</p>
             <ul>
-              <li><strong>Local Preferences (UserDefaults):</strong> Your selected Bible translation, display font size, layout configurations, and monitoring preferences are saved locally on your device.</li>
-              <li><strong>Apple CloudKit Synchronization:</strong> Your Bible reading progress (recorded chapters, completion timestamps) and display preferences (such as per-translation verse numbering settings) are synchronized across your Apple devices using Apple's official CloudKit private database (<code>iCloud.com.LMind.BiblePaste</code>). This data is stored encrypted within your personal Apple iCloud account and is entirely inaccessible to the developer or third parties.</li>
-              <li><strong>Manual iCloud Backup & Restore:</strong> You may manually trigger a complete backup of formatting and display settings to your private CloudKit container (<code>backup_json</code>) or restore them across devices.</li>
-              <li>CloudKit synchronization operates under Apple's iCloud security architecture and requires an active Apple ID with iCloud enabled on your device.</li>
+              <li><strong>Local Preferences and Data Storage:</strong> Your selected Bible translation, display font size, layout configurations, reading progress, and monitoring preferences are saved locally on your device (in <code>UserDefaults</code> and the app sandbox container on Apple devices, and in <code>%LocalAppData%\BiblePaste</code> on Windows).</li>
+              <li><strong>Apple CloudKit Synchronization (iOS, iPadOS, macOS):</strong> On Apple devices, your Bible reading progress (recorded chapters, completion timestamps) and display preferences (such as per-translation verse numbering settings) are synchronized across your Apple devices using Apple's official CloudKit private database (<code>iCloud.com.LMind.BiblePaste</code>). This data is stored encrypted within your personal Apple iCloud account and is entirely inaccessible to the developer or third parties.</li>
+              <li><strong>Manual Backup &amp; Restore:</strong> On Apple devices, you may manually trigger a backup of formatting and display settings to your private CloudKit container (<code>backup_json</code>) or restore them across devices. On Windows, you can export your settings and reading records to a local JSON backup file on your PC and restore from a local file without any cloud transmission.</li>
+              <li>CloudKit synchronization operates under Apple's iCloud security architecture and requires an active Apple ID with iCloud enabled on your Apple device. The Windows app operates locally without cloud synchronization.</li>
             </ul>
 
             <h2>5. Custom study packages and local files</h2>
-            <p>If you import custom study packages or translation files (such as <code>.bpdata</code> or <code>.studypack</code>), these files are stored strictly within the local sandboxed application directory of your device. They are processed entirely offline and are never uploaded to remote developer servers.</p>
+            <p>If you import custom study packages, commentaries, lexicons, or translation files (such as <code>.bpdata</code>, <code>.studypack</code>, or local package folders), these files are stored strictly within the local application directory on your device (the sandboxed app directory on Apple devices or <code>%LocalAppData%\BiblePaste</code> on Windows). They are processed entirely offline and are never uploaded to remote developer servers.</p>
 
             <h2>6. Local retention, deletion, and sync controls</h2>
-            <p>Your reading history and preferences persist across app sessions. You can reset reading progress using the in-app Reset Reading Record option; general display preferences may be preserved unless full settings are reset. To stop iCloud synchronization, disable iCloud or CloudKit permissions for Bible Paste in your Apple device System Settings. Deleting the App removes all locally stored scripture databases, custom packages, and local preferences from the device. However, backups previously uploaded to your private iCloud container may remain in your personal iCloud storage until cleared through Apple iCloud storage management.</p>
+            <p>Your reading history and preferences persist across app sessions. You can reset reading progress using the in-app Reset Reading Record option; general display preferences may be preserved unless full settings are reset. On Apple devices, to stop iCloud synchronization, disable iCloud or CloudKit permissions for Bible Paste in System Settings. Deleting the App on Apple devices removes locally stored databases, custom packages, and preferences from the device, though backups previously uploaded to your private iCloud container may remain in your personal iCloud storage until cleared through Apple iCloud storage management. On Windows, uninstalling the App removes the application package, and deleting the <code>%LocalAppData%\BiblePaste</code> folder removes all locally saved settings, reading records, and imported study materials from your PC.</p>
 
             <h2>7. User controls and support retention</h2>
-            <p>You can disable clipboard monitoring, clear local study packages, revoke macOS Accessibility permissions, and manage iCloud synchronization directly in your device settings. Support correspondence sent to lmind0179@gmail.com is retained only while resolving your inquiry and is deleted thereafter. You may request deletion of support emails at any time.</p>
+            <p>You can disable clipboard monitoring or automatic conversion, clear local study packages, revoke macOS Accessibility permissions, configure or disable global hotkeys, and manage iCloud synchronization directly in the App or your device settings. Support correspondence sent to <a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a> is retained only while resolving your inquiry and is deleted thereafter. You may request deletion of support emails at any time.</p>
 
             <h2>8. Changes to this policy</h2>
             <p>We may update this Privacy Policy from time to time to reflect operational or regulatory adjustments. Material updates will be documented on this public policy page with a revised effective date.</p>
@@ -81,12 +82,12 @@
         <div data-lang="ko">
           <header class="doc-header">
             <h1 class="doc-title">Bible Paste 개인정보 처리방침</h1>
-            <p class="doc-meta">시행일: 2026년 10월 9일</p>
+            <p class="doc-meta">시행일: 2026년 11월 5일</p>
           </header>
 
           <div class="doc-content">
             <h2>1. 운영자 및 적용 범위</h2>
-            <p>Bible Paste는 lmind가 개발·제공하는 iOS, iPadOS 및 macOS용 성경 클립보드 보조 및 성경 통독 유틸리티입니다. 본 개인정보 처리방침은 앱의 클립보드 텍스트 처리, 오프라인 성경 검색, Apple iCloud(CloudKit)를 통한 읽기 진도 동기화, 그리고 고객 문의 처리에 관한 사항을 안내합니다. 개발자 문의: <a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>.</p>
+            <p>Bible Paste는 lmind가 개발·제공하는 iOS, iPadOS, macOS 및 Windows용 성경 클립보드 보조 및 성경 통독 유틸리티입니다. 본 개인정보 처리방침은 앱의 클립보드 텍스트 처리, 오프라인 성경 검색, 기기 내 로컬 데이터 저장, Apple 기기에서의 Apple iCloud(CloudKit) 동기화, 그리고 고객 문의 처리에 관한 사항을 안내합니다. 개발자 문의: <a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>.</p>
 
             <h2>2. 개발자의 수집 및 추적 미수행</h2>
             <p>Bible Paste는 사용자의 클립보드 내용, 성경 검색 기록, 통독 진행 내역, 기기 고유 식별자, 사용 통계를 <strong>개발자 서버로 전송하거나 수집하지 않습니다</strong>. 회원가입이나 계정 생성이 필요하지 않으며, 광고 모듈이나 제3자 분석 SDK(Firebase 등)를 일체 탑재하지 않았습니다. 모든 성경 본문 검색과 변환은 기기 내부의 오프라인 데이터베이스를 통해 실행됩니다. 이메일 문의 시 사용자가 직접 제공한 이메일 주소와 문의 내용은 고객 응대 목적으로만 한정하여 처리됩니다.</p>
@@ -95,27 +96,28 @@
             <p>Bible Paste의 핵심 기능은 복사된 텍스트에서 성경 장절(예: 요 3:16)을 자동 감지하여 해당 역본의 성경 본문으로 변환하는 것입니다:</p>
             <ul>
               <li><strong>macOS 백그라운드 감시:</strong> 메뉴바 앱이 실행 중이고 클립보드 감시 옵션이 활성화된 경우, 앱은 0.1초 타이머 또는 복사 단축키 이벤트를 통해 시스템 클립보드를 확인합니다. 감지된 성경 구절은 서식 본문으로 즉시 변환되어 시스템 클립보드에 다시 기록됩니다. 클립보드 감시 기능은 환경설정에서 언제든지 끌 수 있습니다. 글로벌 단축키 기능에 사용되는 손쉬운 사용(Accessibility) 권한은 키 입력을 감지하기 위한 시스템 API이며, Mac 시스템 설정에서 언제든 권한을 철회할 수 있습니다.</li>
+              <li><strong>Windows 동작:</strong> 시스템 트레이에서 앱이 실행 중이고 '복사 시 자동 변환' 옵션이 켜져 있는 경우, 앱은 Windows 클립보드 변경 알림을 감지하여 성경 장절 패턴이 있을 때만 서식 본문으로 변환해 클립보드에 기록합니다. 글로벌 단축키 기능은 Windows 표준 단축키 및 키 입력 API를 사용하여 현재 커서 위치의 성경 구절을 변환합니다. 자동 변환 및 단축키 기능은 시스템 트레이 메뉴나 앱 설정에서 언제든지 끌 수 있습니다.</li>
               <li><strong>iOS / iPadOS 동작:</strong> 시스템 붙여넣기 버튼을 누르거나 앱이 활성화될 때 클립보드를 확인하여 구절을 감지합니다.</li>
-              <li>클립보드에 기록된 변환 본문 및 Apple 기기 간 클립보드 공유(유니버설 클립보드)는 사용자의 Apple 계정 설정에 따릅니다.</li>
+              <li>클립보드에 기록된 변환 본문 및 운영체제 차원의 클립보드 기록·기기 간 공유(Apple 유니버설 클립보드, Windows 클립보드 기록 등)는 사용자의 운영체제 및 계정 설정에 따릅니다.</li>
             </ul>
 
-            <h2>4. 기기 내 저장 및 Apple iCloud(CloudKit) 동기화</h2>
-            <p>Bible Paste는 Apple의 순정 인프라만을 사용하여 사용자 데이터를 보관하고 동기화합니다:</p>
+            <h2>4. 기기 내 저장, 백업 및 Apple iCloud(CloudKit) 동기화</h2>
+            <p>Bible Paste는 사용자 데이터를 기기 내부에 로컬로 보관하며, Apple 플랫폼에서는 Apple 순정 인프라를 통한 동기화를 지원합니다:</p>
             <ul>
-              <li><strong>로컬 환경설정(UserDefaults):</strong> 기본 성경 역본 선택, 글자 크기, 화면 레이아웃, 감시 활성화 여부 등은 기기 내부 표준 저장소(UserDefaults)에 로컬로 보관됩니다.</li>
-              <li><strong>Apple CloudKit 동기화:</strong> 성경 읽기 진행도(읽은 장/절 목록, 최근 수정 시각)와 역본별 절 번호 표시 설정은 Apple의 공식 비공개 데이터베이스(<code>iCloud.com.LMind.BiblePaste</code>의 privateCloudDatabase)를 통해 동일 Apple 계정의 기기 간에 암호화되어 동기화됩니다. 이 데이터는 사용자의 개인 iCloud 컨테이너에 보관되며 개발자나 제3자는 일체 접근할 수 없습니다.</li>
-              <li><strong>iCloud 수동 백업 및 복원:</strong> 사용자가 원할 경우 전체 서식 설정을 비공개 CloudKit 컨테이너(<code>backup_json</code>)에 백업하거나 복원할 수 있습니다.</li>
-              <li>CloudKit 동기화는 사용자의 Apple ID 및 iCloud 활성화 설정에 따라 동작합니다.</li>
+              <li><strong>로컬 환경설정 및 데이터 보관:</strong> 기본 성경 역본 선택, 글자 크기, 화면 레이아웃, 통독 기록, 감시 활성화 여부 등은 기기 내부 저장소(Apple 기기의 경우 <code>UserDefaults</code> 및 앱 샌드박스 컨테이너, Windows의 경우 <code>%LocalAppData%\BiblePaste</code> 폴더)에 로컬로 보관됩니다.</li>
+              <li><strong>Apple CloudKit 동기화 (iOS, iPadOS, macOS):</strong> Apple 기기에서는 성경 읽기 진행도(읽은 장/절 목록, 최근 수정 시각)와 역본별 절 번호 표시 설정이 Apple의 공식 비공개 데이터베이스(<code>iCloud.com.LMind.BiblePaste</code>의 privateCloudDatabase)를 통해 동일 Apple 계정의 기기 간에 암호화되어 동기화됩니다. 이 데이터는 사용자의 개인 iCloud 컨테이너에 보관되며 개발자나 제3자는 일체 접근할 수 없습니다.</li>
+              <li><strong>수동 백업 및 복원:</strong> Apple 기기에서는 전체 설정을 비공개 CloudKit 컨테이너(<code>backup_json</code>)에 수동 백업하거나 복원할 수 있습니다. Windows에서는 외부 클라우드 전송 없이 설정과 통독 기록을 PC 내 로컬 JSON 파일로 내보내기(백업)하거나 파일에서 불러와 복원할 수 있습니다.</li>
+              <li>CloudKit 동기화는 Apple 기기의 Apple ID 및 iCloud 활성화 설정에 따라 동작하며, Windows 버전은 별도의 클라우드 연동 없이 기기 내부 로컬 저장소에서만 동작합니다.</li>
             </ul>
 
             <h2>5. 개인 연구 자료 및 로컬 패키지</h2>
-            <p>사용자가 외부에서 가져온 성경 패키지 파일(<code>.bpdata</code>, <code>.studypack</code>)은 기기 내 앱 샌드박스 내부 디렉토리에만 안전하게 저장되며, 100% 오프라인으로만 열람·처리되고 외부 서버로 전송되지 않습니다.</p>
+            <p>사용자가 외부에서 가져온 성경·주석·원어 연구 패키지 파일(<code>.bpdata</code>, <code>.studypack</code> 등)은 기기 내 앱 전용 로컬 디렉토리(Apple 기기의 앱 샌드박스 또는 Windows의 <code>%LocalAppData%\BiblePaste</code>)에만 저장되며, 오프라인으로만 열람·처리되고 외부 서버로 전송되지 않습니다.</p>
 
             <h2>6. 기기 내 보관, 삭제 및 동기화 통제</h2>
-            <p>통독 기록과 설정은 앱 세션 간에 지속 보관됩니다. 설정의 '읽기 기록 초기화' 기능을 통해 통독 진도를 리셋할 수 있습니다(일반 서식 설정은 유지될 수 있습니다). iCloud 동기화를 중단하려면 Apple 기기 설정에서 Bible Paste의 iCloud 사용 권한을 끄시면 됩니다. 앱을 기기에서 삭제하면 로컬 성경 DB와 설정은 즉시 제거되지만, 사용자의 개인 iCloud 컨테이너에 업로드된 백업 자료는 Apple 계정에 남을 수 있으므로 필요한 경우 기기의 iCloud 저장 공간 관리에서 직접 삭제하실 수 있습니다.</p>
+            <p>통독 기록과 설정은 앱 세션 간에 지속 보관됩니다. 설정의 '읽기 기록 초기화' 기능을 통해 통독 진도를 리셋할 수 있습니다(일반 서식 설정은 유지될 수 있습니다). Apple 기기에서 iCloud 동기화를 중단하려면 기기 설정에서 Bible Paste의 iCloud 사용 권한을 끄시면 됩니다. Apple 기기에서 앱을 삭제하면 로컬 성경 DB와 설정은 즉시 제거되지만, 개인 iCloud 컨테이너에 업로드된 백업 자료는 Apple 계정에 남을 수 있으므로 필요한 경우 기기의 iCloud 저장 공간 관리에서 직접 삭제하실 수 있습니다. Windows에서는 앱을 제거하면 실행 패키지가 삭제되며, <code>%LocalAppData%\BiblePaste</code> 폴더를 삭제하면 PC에 저장된 환경설정, 통독 기록, 가져온 연구 자료가 모두 삭제됩니다.</p>
 
             <h2>7. 사용자 권한 및 문의 처리</h2>
-            <p>사용자는 클립보드 감시 비활성화, 로컬 패키지 삭제, macOS 손쉬운 사용 권한 철회, iCloud 동기화 중단을 직접 제어할 수 있습니다. 문의 이메일(<a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>)로 접수된 서신은 문의 대응 기간 동안만 보관된 후 파기되며, 언제든지 삭제를 요청하실 수 있습니다.</p>
+            <p>사용자는 클립보드 자동 변환 비활성화, 로컬 패키지 삭제, macOS 손쉬운 사용 권한 철회, 글로벌 단축키 설정 변경, iCloud 동기화 중단을 앱 또는 운영체제 설정에서 직접 제어할 수 있습니다. 문의 이메일(<a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>)로 접수된 서신은 문의 대응 기간 동안만 보관된 후 파기되며, 언제든지 삭제를 요청하실 수 있습니다.</p>
 
             <h2>8. 처리방침 변경 안내</h2>
             <p>기능 추가나 관계 법령 변경에 따라 본 방침이 수정될 경우, 개정 사항과 시행일을 본 공개 안내 페이지를 통해 공지합니다.</p>
