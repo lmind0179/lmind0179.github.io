@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Notice - LTTS</title>
+  <title>Privacy Policy - LTTS</title>
   <link rel="stylesheet" href="../assets/css/style.css">
   <script src="../assets/js/lang.js"></script>
+  <style>
+    .data-table { width: 100%; border-collapse: collapse; margin: 14px 0 20px 0; font-size: 13px; }
+    .data-table th, .data-table td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; }
+    .data-table th { background: #f8f9fa; font-weight: 600; }
+  </style>
 </head>
 <body>
   <header class="site-header"><div class="site-container header-inner">
@@ -18,17 +23,138 @@
   </div></header>
   <main class="site-content"><div class="site-container">
     <article class="doc-content" data-lang="en">
-<h1>LTTS Privacy Notice</h1>
-<h2>Synthesis and storage</h2><p>LTTS processes submitted documents and text, voice-cloning recordings, generated audio, and job settings on the connected computer. iOS downloads create a separate copy on the device. Android uses the camera to scan pairing QR codes and does not save scan images as files.</p>
-<h2>Online services</h2><p>Depending on desktop settings, Gemini, OpenAI, or Claude receives text for analysis, and Gemini, Azure Speech, or Microsoft Edge receives text for synthesis. API keys authenticate provider requests. macOS uses the Keychain, and Windows uses backend session memory. Do not submit sensitive, confidential, or personal information to unpaid Gemini services. <a href="https://ai.google.dev/gemini-api/terms">Gemini</a> · <a href="https://openai.com/enterprise-privacy/">OpenAI</a> · <a href="https://www.anthropic.com/legal/commercial-terms">Anthropic</a> · <a href="https://learn.microsoft.com/en-us/azure/foundry/responsible-ai/speech-service/text-to-speech/data-privacy-security">Azure Speech</a> · <a href="https://learn.microsoft.com/en-us/legal/microsoft-edge/privacy">Microsoft Edge</a></p>
-<h2>Connections and activation</h2><p>Requests and responses sent to a remote address pass through the relay. Relay registration uses an activation code or Apple purchase verification information, device authentication, a name, platform, and registration status. The relay accounts for monthly data usage. Paid Windows activation sends the purchase key, a computer-derived identifier, and device authentication data. iCloud auto-connect syncs connection data through Apple iCloud.</p>
-<h2>Deletion and contact</h2><p>Delete jobs and reference recordings in the desktop library and voice manager. Delete mobile downloads and exported files separately where they are stored. Contact <a href="mailto:lmind0179@gmail.com">LMind Support</a> for access, correction, deletion, restriction, or questions about server registration records.</p></article>
+<h1>LTTS Privacy Policy</h1>
+<p>Last updated: November 15, 2026</p>
+
+<h2>1. On-device Processing & Local Storage</h2>
+<p>LTTS prioritizes local on-device processing. Source documents, input text, voice-cloning reference recordings, and generated audio are processed directly on your local computer and stored in your desktop storage. Developers do not collect or monitor your manuscripts or private recordings.</p>
+<ul>
+  <li><strong>Voice Cloning:</strong> Reference recordings and clone profiles are stored exclusively on your device and are never uploaded to developer servers. Explicit user confirmation of voice ownership is required before profile registration.</li>
+  <li><strong>Mobile Clients:</strong> iOS and Android applications connect to your desktop PC backend. iOS audio downloads create a local copy on the device. Android uses the camera solely for pairing QR code scanning and does not save scanned camera images.</li>
+</ul>
+
+<h2>2. External AI Cloud Services & Cross-border Data Transfer</h2>
+<p>When you explicitly select cloud-based analysis or cloud synthesis engines, or enter third-party API keys, the necessary text is transmitted to external providers in the United States under secure HTTPS encryption.</p>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Recipient</th>
+      <th>Country</th>
+      <th>Data Transferred</th>
+      <th>Purpose</th>
+      <th>Retention Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Google LLC</strong> (Gemini API)</td>
+      <td>USA</td>
+      <td>Text for context analysis</td>
+      <td>Context analysis and punctuation refinement</td>
+      <td>Per Google account & billing terms (Do not submit sensitive data to unpaid tiers)</td>
+    </tr>
+    <tr>
+      <td><strong>OpenAI Inc.</strong> (API)</td>
+      <td>USA</td>
+      <td>Text for context analysis</td>
+      <td>Context analysis and prosody refinement</td>
+      <td>Per OpenAI Business API terms (Not used to train models)</td>
+    </tr>
+    <tr>
+      <td><strong>Anthropic PBC</strong> (Claude)</td>
+      <td>USA</td>
+      <td>Text for context analysis</td>
+      <td>Context analysis and structure breakdown</td>
+      <td>Per Anthropic Commercial terms</td>
+    </tr>
+    <tr>
+      <td><strong>Microsoft Corp.</strong> (Azure Speech)</td>
+      <td>USA</td>
+      <td>Text for speech synthesis</td>
+      <td>High-quality neural speech synthesis</td>
+      <td>Per Microsoft Azure Commercial terms</td>
+    </tr>
+  </tbody>
+</table>
+<p>API keys are saved in macOS Keychain or desktop session memory and are never transmitted to LTTS developer servers.</p>
+
+<h2>3. User Consent & Refusal Rights</h2>
+<p>LTTS prompts a mandatory Terms of Service & Privacy Consent dialog on the first application launch across all supported platforms. If you decline consent to external cloud data transmission, you can fully utilize offline local engines (Supertonic 3, VoxCPM2, Kokoro-82M) without sending any text outside your device.</p>
+
+<h2>4. Connections, Remote Relay & Activation</h2>
+<p>When remote access is enabled through a relay server, connection requests and task metadata pass through the relay under encrypted tunnels. The relay server records registration token hashes, device identifiers, platform info, and monthly bandwidth volume. Paid Windows activation verifies purchase keys and desktop hardware hashes against the activation registry. Apple iCloud auto-connect syncs pairing metadata via your private iCloud database.</p>
+
+<h2>5. Data Deletion & Privacy Rights</h2>
+<p>You can permanently delete manuscripts, audio jobs, and voice cloning profiles at any time directly in the desktop Library and Voice Manager. For inquiries regarding server activation records or rights to access, rectification, or erasure, please contact <a href="mailto:lmind0179@gmail.com">LMind Support</a>.</p>
+    </article>
+
     <article class="doc-content" data-lang="ko">
-<h1>LTTS 개인정보 처리 안내</h1>
-<h2>음성 생성 및 보관</h2><p>LTTS는 사용자가 입력한 문서와 텍스트, 음성 복제용 녹음, 합성 결과와 작업 설정을 연결된 PC에서 처리합니다. iOS의 음원 다운로드는 기기에 별도 사본을 만듭니다. Android 카메라는 PC 연결 QR을 읽으며 앱은 스캔 이미지를 파일로 저장하지 않습니다.</p>
-<h2>온라인 서비스</h2><p>PC 설정에 따라 Gemini·OpenAI·Claude에는 분석 대상 텍스트가, Gemini·Azure Speech·Microsoft Edge에는 합성 대상 텍스트가 전송됩니다. API 키는 제공자 인증에 사용되며 macOS에서는 키체인, Windows에서는 백엔드 세션 메모리에 보관됩니다. Gemini 무상 서비스에는 민감정보·기밀정보·개인정보를 보내지 마세요. <a href="https://ai.google.dev/gemini-api/terms">Gemini</a> · <a href="https://openai.com/enterprise-privacy/">OpenAI</a> · <a href="https://www.anthropic.com/legal/commercial-terms">Anthropic</a> · <a href="https://learn.microsoft.com/en-us/azure/foundry/responsible-ai/speech-service/text-to-speech/data-privacy-security">Azure Speech</a> · <a href="https://learn.microsoft.com/en-us/legal/microsoft-edge/privacy">Microsoft Edge</a></p>
-<h2>연결 및 활성화</h2><p>외부 주소의 연결 요청과 응답은 중계 서버를 통과합니다. 중계 등록에는 등록 코드 또는 Apple 구매 검증 정보, 기기 인증값, 이름, 플랫폼과 등록 상태가 사용됩니다. 중계는 월별 전송량을 집계합니다. Windows 판매판 활성화는 구매 키와 PC 파생 식별값, 기기 인증값을 전송합니다. iCloud 자동 연결을 사용하면 연결 정보가 Apple iCloud로 동기화됩니다.</p>
-<h2>삭제 및 문의</h2><p>작업과 등록 음성은 PC의 보관함과 목소리 관리에서 삭제할 수 있습니다. 기기의 다운로드와 내보낸 파일은 저장 위치에서 별도로 삭제합니다. 열람·정정·삭제·처리 정지 및 서버 등록 정보 문의는 <a href="mailto:lmind0179@gmail.com">LMind 고객 지원</a>으로 접수합니다.</p></article>
+<h1>LTTS 개인정보 처리방침</h1>
+<p>최종 개정일: 2026년 11월 15일</p>
+
+<h2>1. 기기 로컬 처리 및 데이터 보관 원칙</h2>
+<p>LTTS는 기기 내부 로컬 처리를 기본으로 동작합니다. 사용자가 입력한 설교 및 문서 원문, 음성 복제용 녹음 파일, 합성된 오디오 결과물은 연결된 사용자의 컴퓨터/기기에 직접 저장·처리됩니다. 개발자는 사용자의 원문이나 사적인 녹음을 임의로 수집하거나 열람하지 않습니다.</p>
+<ul>
+  <li><strong>음성 복제(내 목소리) 데이터:</strong> 음성 복제에 사용되는 녹음 파일과 모델 가중치는 사용자의 기기 내부 보관함에만 저장되며 외부 개발사 서버로 업로드되지 않습니다. 프로필 등록 전 본인 음성 확인 동의가 필수로 요구됩니다.</li>
+  <li><strong>모바일 기기 연동:</strong> iOS 및 Android 앱은 사용자의 PC 백엔드와 통신합니다. iOS 음원 다운로드는 기기에 별도 로컬 사본을 생성합니다. Android 카메라는 PC 연결 QR 스캔에만 사용되며 스캔 이미지를 파일로 저장하지 않습니다.</li>
+</ul>
+
+<h2>2. 외부 AI 클라우드 서비스 및 개인정보 국외 이전 고지</h2>
+<p>사용자가 설정에서 클라우드 문맥 분석(Gemini, OpenAI, Claude) 또는 온라인 음성 합성(Azure Speech)을 선택하고 API 키를 등록한 경우에 한하여, 해당 기능을 수행하기 위해 입력한 텍스트가 미국 소재 제3자 AI 제공사 서버로 암호화(HTTPS)되어 전송됩니다.</p>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>이전받는 자</th>
+      <th>이전 국가</th>
+      <th>이전 항목</th>
+      <th>이용 목적</th>
+      <th>보유 및 이용 기간</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Google LLC</strong> (Gemini API)</td>
+      <td>미국</td>
+      <td>문맥 분석용 텍스트</td>
+      <td>성경 구문 문맥 분석 및 호흡 정돈</td>
+      <td>Google 서비스 계정 정책에 따름 (무상 서비스에는 민감·개인정보 전송 금지)</td>
+    </tr>
+    <tr>
+      <td><strong>OpenAI Inc.</strong> (API)</td>
+      <td>미국</td>
+      <td>문맥 분석용 텍스트</td>
+      <td>문맥 추론 및 어조 분석</td>
+      <td>OpenAI Business API 정책에 따름 (모델 학습 미사용)</td>
+    </tr>
+    <tr>
+      <td><strong>Anthropic PBC</strong> (Claude)</td>
+      <td>미국</td>
+      <td>문맥 분석용 텍스트</td>
+      <td>문서 구조 분석</td>
+      <td>Anthropic 상업 약관에 따름</td>
+    </tr>
+    <tr>
+      <td><strong>Microsoft Corp.</strong> (Azure Speech)</td>
+      <td>미국</td>
+      <td>음성 합성용 텍스트</td>
+      <td>온라인 신경망 음성 합성</td>
+      <td>Microsoft Azure Cognitive Services 상업 약관에 따름</td>
+    </tr>
+  </tbody>
+</table>
+<p>등록된 API 키는 macOS 키체인 또는 백엔드 세션 메모리에 안전하게 보관되며 개발사 서버로 전송되지 않습니다.</p>
+
+<h2>3. 이용자 사전 동의 및 거부권</h2>
+<p>LTTS는 모든 플랫폼에서 앱 최초 실행 시 1회성 '이용 약관 및 개인정보 처리 동의' 대화상자를 제공합니다. 외부 클라우드 전송에 동의하지 않는 경우 클라우드 기능을 배제하고 완전한 오프라인 로컬 엔진(Supertonic 3, VoxCPM2, Kokoro-82M)만으로 앱을 사용할 수 있습니다.</p>
+
+<h2>4. 연결, 중계 서버 및 정품 활성화</h2>
+<p>외부 중계(Relay) 주소를 사용하는 경우 연결 요청과 작업 데이터가 암호화된 터널을 통해 중계 서버를 통과합니다. 중계 서버는 등록 토큰 해시, 기기 인증 식별자, 플랫폼, 월별 전송량을 집계합니다. Windows 판매판 정품 활성화는 구매 키와 PC 파생 하드웨어 식별값을 인증 서버로 전송합니다. Apple iCloud 자동 연결은 Apple 개인 iCloud 데이터베이스를 통해 동기화됩니다.</p>
+
+<h2>5. 개인정보 파기 및 이용자 권리 행사</h2>
+<p>사용자는 PC의 보관함과 목소리 관리 화면에서 작업 내역, 음원, 음성 복제 녹음을 언제든 즉시 영구 삭제할 수 있습니다. 서버 등록 정보 문의 및 열람·정정·삭제 요구는 고객지원팀(<a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>)으로 문의하시면 지체 없이 처리됩니다.</p>
+    </article>
   </div></main>
 </body>
 </html>
