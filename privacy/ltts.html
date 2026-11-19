@@ -85,7 +85,7 @@
 <p>LTTS prompts a mandatory Terms of Service & Privacy Consent dialog on the first application launch across all supported platforms. If you decline consent to external cloud data transmission, you can fully utilize offline local engines (Supertonic 3, VoxCPM2, Kokoro-82M) without sending any text outside your device.</p>
 
 <h2>4. Connections, Remote Relay & Activation</h2>
-<p>When remote access is enabled through a relay server, connection requests and task metadata pass through the relay under encrypted tunnels. The relay server records registration token hashes, device identifiers, platform info, and monthly bandwidth volume. Paid Windows activation verifies purchase keys and desktop hardware hashes against the activation registry. Apple iCloud auto-connect syncs pairing metadata via your private iCloud database.</p>
+<p>When remote access is enabled through a relay server, connection requests and audio streaming pass through LMind's secure relay infrastructure (utilizing Cloudflare edge and Oracle Cloud). <strong>No input text or generated audio files are ever stored on the relay server;</strong> data is streamed in real-time under end-to-end encryption (AES-256-GCM) and discarded immediately upon transmission. The relay server records only transient connection hashes, device identifiers, platform info, and bandwidth volume for abuse prevention. Paid Windows activation verifies purchase keys and desktop hardware hashes against the activation registry. Apple iCloud auto-connect syncs pairing metadata via your private iCloud database.</p>
 
 <h2>5. Data Deletion &amp; Privacy Rights</h2>
 <p>You can permanently delete manuscripts, audio jobs, and voice cloning profiles at any time directly in the desktop Library and Voice Manager. For inquiries regarding server activation records or rights to access, rectification, or erasure, please contact <a href="mailto:lmind0179@gmail.com">LMind Support</a>.</p>
@@ -160,7 +160,7 @@
 <p>LTTS는 모든 플랫폼에서 앱 최초 실행 시 1회성 '이용 약관 및 개인정보 처리 동의' 대화상자를 제공합니다. 외부 클라우드 전송에 동의하지 않는 경우 클라우드 기능을 배제하고 완전한 오프라인 로컬 엔진(Supertonic 3, VoxCPM2, Kokoro-82M)만으로 앱을 사용할 수 있습니다.</p>
 
 <h2>4. 연결, 중계 서버 및 정품 활성화</h2>
-<p>외부 중계(Relay) 주소를 사용하는 경우 연결 요청과 작업 데이터가 암호화된 터널을 통해 중계 서버를 통과합니다. 중계 서버는 등록 토큰 해시, 기기 인증 식별자, 플랫폼, 월별 전송량을 집계합니다. Windows 판매판 정품 활성화는 구매 키와 PC 파생 하드웨어 식별값을 인증 서버로 전송합니다. Apple iCloud 자동 연결은 Apple 개인 iCloud 데이터베이스를 통해 동기화됩니다.</p>
+<p>외부 연결(원격 생성 및 모바일 재생) 기능을 활성화하는 경우, 연결 요청과 오디오 스트리밍 데이터가 LMind가 운영하는 보안 중계 인프라(Cloudflare 글로벌 엣지 및 Oracle Cloud)를 경유합니다. <strong>사용자가 입력한 문서 원문 및 생성된 음성 데이터는 중계 서버에 일체 보관되지 않으며,</strong> 기기간 종단간 암호화(AES-256-GCM) 상태로 실시간 스트리밍된 후 즉시 소멸(휘발)합니다. 중계 서버는 어뷰징 방지 및 트래픽 관리를 위해 등록 토큰 해시, 기기 인증 식별자, 플랫폼, 월별 전송량만을 최소한으로 집계합니다. Windows 판매판 정품 활성화는 구매 키와 PC 파생 하드웨어 식별값을 인증 서버로 전송합니다. Apple iCloud 자동 연결은 Apple 개인 iCloud 데이터베이스를 통해 동기화됩니다.</p>
 
 <h2>5. 개인정보 파기 및 이용자 권리 행사</h2>
 <p>사용자는 PC의 보관함과 목소리 관리 화면에서 작업 내역, 음원, 음성 복제 녹음을 언제든 즉시 영구 삭제할 수 있습니다. 서버 등록 정보 문의 및 열람·정정·삭제 요구는 고객지원팀(<a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>)으로 문의하시면 지체 없이 처리됩니다.</p>
