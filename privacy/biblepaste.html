@@ -36,12 +36,12 @@
         <div data-lang="en">
           <header class="doc-header">
             <h1 class="doc-title">Privacy Policy for Bible Paste</h1>
-            <p class="doc-meta">Effective Date: November 5, 2026</p>
+            <p class="doc-meta">Effective Date: November 19, 2026</p>
           </header>
 
           <div class="doc-content">
             <h2>1. Operator and scope</h2>
-            <p>Bible Paste is a scripture clipboard and reading assistant provided by lmind for iOS, iPadOS, macOS, and Windows. This Privacy Policy covers clipboard text processing, local scripture search, local data storage, Apple iCloud synchronization of reading progress and settings on Apple devices, and support inquiries. Developer contact: <a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>.</p>
+            <p>Bible Paste is a scripture clipboard and reading assistant provided by lmind for iOS, iPadOS, macOS, and Windows. This Privacy Policy covers clipboard text processing, local scripture search, local data storage, cross-device synchronization (Apple iCloud and LMind Server Sync), and support inquiries. Developer contact: <a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>.</p>
 
             <h2>2. General collection and tracking</h2>
             <p>Bible Paste does <strong>not</strong> collect, upload, or transmit your clipboard text, scripture searches, reading notes, or usage analytics to developer servers. The App requires no user registration, no account creation, and uses no advertising networks, tracking frameworks, or third-party analytics SDKs. Scripture matching is executed offline on your device using local databases. If you contact support by email, we receive your email address and the information you provide solely to respond to your inquiry.</p>
@@ -65,12 +65,13 @@
               <li>Formatted results written to the system clipboard and any OS-level clipboard history or cross-device clipboard synchronization (such as Apple Universal Clipboard or Windows Clipboard History) depend on your operating system and account settings.</li>
             </ul>
 
-            <h2>5. Data storage, backup, and Apple iCloud (CloudKit) sync</h2>
-            <p>Bible Paste stores user data locally on your device, with optional Apple iCloud synchronization on Apple platforms:</p>
+            <h2>5. Data storage, backup, and cross-device synchronization</h2>
+            <p>Bible Paste stores user data locally on your device, with optional cloud synchronization services:</p>
             <ul>
               <li><strong>Local Preferences and Data Storage:</strong> Your selected Bible translation, display font size, layout configurations, reading progress, and monitoring preferences are saved locally on your device (in <code>UserDefaults</code> and the app sandbox container on Apple devices, and in <code>%LocalAppData%\BiblePaste</code> on Windows).</li>
-              <li><strong>Apple CloudKit Synchronization (iOS, iPadOS, macOS):</strong> On Apple devices, your Bible reading progress (recorded chapters, completion timestamps) and display preferences (such as per-translation verse numbering settings) are synchronized across your Apple devices using Apple's official CloudKit private database (<code>iCloud.com.LMind.BiblePaste</code>). This data is stored encrypted within your personal Apple iCloud account and is entirely inaccessible to the developer or third parties.</li>
-              <li><strong>Manual Backup &amp; Restore:</strong> On Apple devices, you may manually trigger a backup of formatting and display settings to your private CloudKit container (<code>backup_json</code>) or restore them across devices. On Windows, you can export your settings and reading records to a local JSON backup file on your PC and restore from a local file without any cloud transmission.</li>
+              <li><strong>Apple CloudKit Synchronization (Apple Devices):</strong> On Apple devices, your Bible reading progress and verse display settings can be synchronized across your devices using Apple's official CloudKit private database (<code>iCloud.com.LMind.BiblePaste</code>). This data is stored encrypted within your personal Apple iCloud account and is entirely inaccessible to the developer or third parties.</li>
+              <li><strong>LMind Server Synchronization (Cross-Device Code &amp; QR Pairing):</strong> For cross-device reading progress synchronization (e.g., between macOS and iOS/iPadOS), the App provides 'LMind Server Sync' using a 6-character sync code and QR code. Only anonymous, non-personal data (an ephemeral 6-character random sync code, a list of completed Bible chapter identifiers, and last-modified timestamps) is transmitted over TLS/HTTPS encryption to our secure Cloudflare D1 database. No user accounts, passwords, names, emails, hardware IDs, or personal notes are ever collected or stored. You can disconnect sync or reset your reading records at any time in App Settings.</li>
+              <li><strong>Manual Backup &amp; Restore:</strong> On Apple devices, you may manually trigger a backup to your private CloudKit container. On Windows, you can export your settings and reading records to a local JSON backup file on your PC without any cloud transmission.</li>
               <li>CloudKit synchronization operates under Apple's iCloud security architecture and requires an active Apple ID with iCloud enabled on your Apple device. The Windows app operates locally without cloud synchronization.</li>
             </ul>
 
@@ -92,12 +93,12 @@
         <div data-lang="ko">
           <header class="doc-header">
             <h1 class="doc-title">Bible Paste 개인정보 처리방침</h1>
-            <p class="doc-meta">시행일: 2026년 11월 17일</p>
+            <p class="doc-meta">시행일: 2026년 11월 19일</p>
           </header>
 
           <div class="doc-content">
             <h2>1. 운영자 및 적용 범위</h2>
-            <p>Bible Paste는 lmind가 개발·제공하는 iOS, iPadOS, macOS 및 Windows용 성경 클립보드 보조 및 성경 통독 유틸리티입니다. 본 개인정보 처리방침은 앱의 클립보드 텍스트 처리, 오프라인 성경 검색, 기기 내 로컬 데이터 저장, Apple 기기에서의 Apple iCloud(CloudKit) 동기화, 그리고 고객 문의 처리에 관한 사항을 안내합니다. 개발자 문의: <a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>.</p>
+            <p>Bible Paste는 lmind가 개발·제공하는 iOS, iPadOS, macOS 및 Windows용 성경 클립보드 보조 및 성경 통독 유틸리티입니다. 본 개인정보 처리방침은 앱의 클립보드 텍스트 처리, 오프라인 성경 검색, 기기 내 로컬 데이터 저장, 기기 간 동기화(Apple iCloud 및 LMind 서버 동기화), 그리고 고객 문의 처리에 관한 사항을 안내합니다. 개발자 문의: <a href="mailto:lmind0179@gmail.com">lmind0179@gmail.com</a>.</p>
 
             <h2>2. 일반적인 수집 및 추적 미수행</h2>
             <p>Bible Paste는 사용자의 클립보드 내용, 성경 검색 기록, 통독 진행 내역, 사용 통계를 <strong>개발자 서버로 전송하거나 수집하지 않습니다</strong>. 회원가입이나 계정 생성이 필요하지 않으며, 광고 모듈이나 제3자 분석 SDK(Firebase 등)를 일체 탑재하지 않았습니다. 모든 성경 본문 검색과 변환은 기기 내부의 오프라인 데이터베이스를 통해 실행됩니다. 이메일 문의 시 사용자가 직접 제공한 이메일 주소와 문의 내용은 고객 응대 목적으로만 한정하여 처리됩니다.</p>
@@ -121,11 +122,12 @@
               <li>클립보드에 기록된 변환 본문 및 운영체제 차원의 클립보드 기록·기기 간 공유(Apple 유니버설 클립보드, Windows 클립보드 기록 등)는 사용자의 운영체제 및 계정 설정에 따릅니다.</li>
             </ul>
 
-            <h2>5. 기기 내 저장, 백업 및 Apple iCloud(CloudKit) 동기화</h2>
-            <p>Bible Paste는 사용자 데이터를 기기 내부에 로컬로 보관하며, Apple 플랫폼에서는 Apple 순정 인프라를 통한 동기화를 지원합니다:</p>
+            <h2>5. 기기 내 저장, 백업 및 기기 간 동기화</h2>
+            <p>Bible Paste는 사용자 데이터를 기본적으로 기기 내부에 로컬로 보관하며, 편리한 기기 간 이용을 위해 두 가지 동기화 옵션을 지원합니다:</p>
             <ul>
               <li><strong>로컬 환경설정 및 데이터 보관:</strong> 기본 성경 역본 선택, 글자 크기, 화면 레이아웃, 통독 기록, 감시 활성화 여부 등은 기기 내부 저장소(Apple 기기의 경우 <code>UserDefaults</code> 및 앱 샌드박스 컨테이너, Windows의 경우 <code>%LocalAppData%\BiblePaste</code> 폴더)에 로컬로 보관됩니다.</li>
-              <li><strong>Apple CloudKit 동기화 (iOS, iPadOS, macOS):</strong> Apple 기기에서는 성경 읽기 진행도(읽은 장/절 목록, 최근 수정 시각)와 역본별 절 번호 표시 설정이 Apple의 공식 비공개 데이터베이스(<code>iCloud.com.LMind.BiblePaste</code>의 privateCloudDatabase)를 통해 동일 Apple 계정의 기기 간에 암호화되어 동기화됩니다. 이 데이터는 사용자의 개인 iCloud 컨테이너에 보관되며 개발자나 제3자는 일체 접근할 수 없습니다.</li>
+              <li><strong>Apple CloudKit 동기화 (Apple 기기 간):</strong> Apple 기기에서는 성경 읽기 진행도(읽은 장/절 목록, 최근 수정 시각)와 역본별 절 번호 표시 설정이 Apple의 공식 비공개 데이터베이스(<code>iCloud.com.LMind.BiblePaste</code>의 privateCloudDatabase)를 통해 동일 Apple 계정의 기기 간에 암호화되어 동기화됩니다. 이 데이터는 사용자의 개인 iCloud 컨테이너에 보관되며 개발자나 제3자는 일체 접근할 수 없습니다.</li>
+              <li><strong>LMind 서버 동기화 (기기 간 코드 및 QR 연동):</strong> Mac과 iOS(iPad, iPhone) 간 성경읽기표 동기화를 위해 'LMind 서버 동기화'를 제공합니다. 외부 로그인 없이 6자리 고유 코드와 QR 코드로 연동되며, 오직 비식별 익명 데이터(무작위 6자리 동기화 코드, 읽은 성경 장 번호 목록, 갱신 시각)만 TLS/HTTPS 암호화 통신을 통해 Cloudflare D1 데이터베이스에 안전하게 저장됩니다. 사용자 이름, 이메일, 비밀번호, 기기 식별자, 개인 메모 등 일체의 개인정보는 절대 수집되거나 저장되지 않으며, 앱 설정에서 언제든지 연동 해제 및 데이터 초기화가 가능합니다.</li>
               <li><strong>수동 백업 및 복원:</strong> Apple 기기에서는 전체 설정을 비공개 CloudKit 컨테이너(<code>backup_json</code>)에 수동 백업하거나 복원할 수 있습니다. Windows에서는 외부 클라우드 전송 없이 설정과 통독 기록을 PC 내 로컬 JSON 파일로 내보내기(백업)하거나 파일에서 불러와 복원할 수 있습니다.</li>
               <li>CloudKit 동기화는 Apple 기기의 Apple ID 및 iCloud 활성화 설정에 따라 동작하며, Windows 버전은 별도의 클라우드 연동 없이 기기 내부 로컬 저장소에서만 동작합니다.</li>
             </ul>
